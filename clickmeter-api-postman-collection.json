@@ -1,0 +1,5233 @@
+{
+    "id": "285820fcb4a33d68d421d5f22da53ced",
+    "name": "ClickMeter API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "3a1bb8af5c70949991a6824722eb0483",
+            "name": "Retrieve current account data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "cec76387fab5e5e8f1ce5fde91388ea6",
+            "name": "Update current account data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f84e6cad72c414003cdaac24cb052d7",
+            "name": "Retrieve list of a domains allowed to redirect in DDU mode",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/domainwhitelist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "a7af03b8220e88efa8968a9ab490d422",
+            "name": "Create an domain entry",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/domainwhitelist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f6212519602ffb37e01f773860956c6",
+            "name": "Delete an domain entry",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/domainwhitelist\/{whitelistId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "whitelistId",
+                    "description": "The id of the domain to delete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fed11e6fc6fb8cc80fe90c41c011ef4",
+            "name": "Retrieve list of a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "29e0f21a1f4ba5a8157fae375dd4b051",
+            "name": "Create a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "08e4e5796045ba3c99d0ab2d9efc0073",
+            "name": "Delete a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a6ce98386878903eff01403d0c63521",
+            "name": "Retrieve a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "fcc0e83e95a4d4aaf648f5a79cde61ea",
+            "name": "Update a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c34941a2eeaf6663798da8e744f2db00",
+            "name": "Change the permission on a shared object",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/{type}\/permissions\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"datapoint\" or \"group\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b08282a2e24be188bb216998965c49a",
+            "name": "Change the permission on a shared object",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/{type}\/permissions\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"datapoint\" or \"group\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "b68af079ae5df3e916f7f9b8135435df",
+            "name": "Retrieve permissions for a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/permissions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entityType",
+                    "description": "Can be \"datapoint\" or \"group\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entityId",
+                    "description": "Optional id of the datapoint\/group entity to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "0e6264b72f4fb26476a39a90d0246962",
+            "name": "Retrieve count of the permissions for a guest",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/permissions\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "guestId",
+                    "description": "Id of the guest",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entityType",
+                    "description": "Can be \"datapoint\" or \"group\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "entityId",
+                    "description": "Optional id of the datapoint\/group entity to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cce08f1f959b3794ae3659e10c931b7",
+            "name": "Retrieve count of guests",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/guests\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ce7e02d00f930d2f5c3e9feb51b8b1a",
+            "name": "Retrieve list of a ip to exclude from event tracking",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/ipblacklist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb40e4553cbbc1f0f85addc6e501f2bb",
+            "name": "Create an ip blacklist entry",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/ipblacklist",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb9e79aba599bd90a282997bade235ed",
+            "name": "Delete an ip blacklist entry",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/ipblacklist\/{blacklistId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "blacklistId",
+                    "description": "The id of the ip to delete",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "48921a9a2c9e3eaf5625f4fa5ba15719",
+            "name": "Retrieve current account plan",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/account\/plan",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "12e51a9177b95ce792476e9f1f075e17",
+            "name": "Retrieve statistics about this customer for a timeframe",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fd9244da022b6228737144e5c58d0d5",
+            "name": "Retrieve statistics about this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "ceadfd0e7eae49458dea104f9cc0d4b0",
+            "name": "Retrieve statistics about a subset of conversions for a timeframe with conversions data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/aggregated\/summary\/conversions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "dfd48807506b83f041f82065d20fa47a",
+            "name": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/aggregated\/summary\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupId",
+                    "description": "Filter by this group id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "825f62e18bac973c070cdc66b8ad0adb",
+            "name": "Retrieve statistics about a subset of groups for a timeframe with groups data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/aggregated\/summary\/groups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "76aa23b466c7b059bad79a8a0e6c7374",
+            "name": "Retrieve the latest list of events of this account. Limited to last 100.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/clickstream",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "group",
+                    "description": "Filter by this group id (mutually exclusive with \"datapoint\" and \"conversion\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "datapoint",
+                    "description": "Filter by this datapoint id (mutually exclusive with \"group\" and \"conversion\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "conversion",
+                    "description": "Filter by this conversion id (mutually exclusive with \"datapoint\" and \"group\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pageSize",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ff161834c8f62eaba412771fb26b814",
+            "name": "Retrieve a list of conversions",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e0d1c1ffbaab661f9d1aaa7d5ffa6a4",
+            "name": "Create a conversion",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb337615b66b5fad3cf618903bac94f0",
+            "name": "Delete conversion specified by id",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "95397004f4a29d5d3501fc1515555cf1",
+            "name": "Retrieve conversion specified by id",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "54846ba01802c21e3d9a66c3554cb055",
+            "name": "Update conversion specified by id",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "086b413117c31e8193fd349aafa12d73",
+            "name": "Retrieve statistics about this conversion for a timeframe",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "6869c96bc4e4a8d4d7e196735dfec243",
+            "name": "Retrieve statistics about this conversion for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b0ccdaa4a66da793319a70e6c8f7811",
+            "name": "Retrieve a list of datapoints connected to this conversion",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c0199fca8c1b142d2ba2b98621b0a3a7",
+            "name": "Modify the association between a conversion and multiple datapoints",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/batch\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc8e5f04b691b6ccc1f4816dcd3f3292",
+            "name": "Retrieve a count of datapoints connected to this conversion",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fabc694666964c1b786dbbe88fc5367",
+            "name": "Modify the association between a conversion and a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec576db720e2c729dbeb260be60f9e4f",
+            "name": "Retrieve the list of events related to this conversion.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/hits",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "db23fe80edc68cf35b1c84fb429f7770",
+            "name": "Fast patch the \"notes\" field of a conversion",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/notes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "244e4190ded434317730c2606fcc59a8",
+            "name": "Retrieve a top report connected to this conversion",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/reports",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "conversionId",
+                    "description": "Id of the conversion",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hittype",
+                    "description": "Type of the event you want to filter this report with. By default no filter is applied.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "8376e01a590d4907e60f6c0fbe5ba529",
+            "name": "Retrieve statistics about this customer for a timeframe related to a subset of conversions grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "8b2a665bea481414a41b4b88bbcdff99",
+            "name": "Retrieve a count of conversions",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/conversions\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "b100f76da91fc4fc3c43c3305dacff33",
+            "name": "List of all the datapoints associated to the user",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "0438bdde644dcb60dbde7ee03f5267b9",
+            "name": "Create a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "217d1a03045b5e5d1badf166fdf79a35",
+            "name": "Delete a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "800952efa3fa2b43532a1a1bae852dda",
+            "name": "Get a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "031d61adc0715895f9e394bbc1ee8e67",
+            "name": "Update a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "00c946d8ef6e2581a15abe2bcd819dc7",
+            "name": "Retrieve statistics about this datapoint for a timeframe",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "b004f4739116b5c80002e6025759823e",
+            "name": "Retrieve statistics about this datapoint for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "47913392b3f83a2c59c92bc159747888",
+            "name": "Fast switch the \"favourite\" field of a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/favourite",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "4012b6d96c80e46ad8974e7a6519726c",
+            "name": "Retrieve the list of events related to this datapoint.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/hits",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a62f96a314fe38a2cc293009fd5be47",
+            "name": "Fast patch the \"notes\" field of a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/notes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "7596598bba34e8be32a58d4840159361",
+            "name": "Retrieve a top report connected to this datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/{id}\/reports",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "b34bf52bf7ed47138eaac67845083936",
+            "name": "Retrieve statistics about this customer for a timeframe by groups",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "a4604c0c27b3e3e87ba9996fc25c340a",
+            "name": "Retrieve statistics about all datapoints of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c7a9ea60fd02d5aa510485474339fcbb",
+            "name": "Delete multiple datapoints",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/batch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "544683972844b085a52e9df83a7f170b",
+            "name": "Update multiple datapoints",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/batch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "651d47532051ce5c62cbd147f813ddaa",
+            "name": "Create multiple datapoints",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/batch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "392ba3d39f4c07273ef8f94b7f31310a",
+            "name": "Count the datapoints associated to the user",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/datapoints\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "52a4accb9dd924a2c809aa798ca4abf1",
+            "name": "Retrieve a list of domains",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Filter domains with this anmen",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "e8731f646b73fe77a21c0e73349c618e",
+            "name": "Create a domain",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "094d42c1a523656bb4359ed87b33b738",
+            "name": "Delete a domain",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7c657907922bb1c6681a69b17d9e17c",
+            "name": "Get a domain",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ffae6b85e7d6efd8be18656ad929d07",
+            "name": "Update a domain",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ba201bfae3f646a65d67795ad35d358",
+            "name": "Retrieve count of domains",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/domains\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Filter domains with this anmen",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb4f26cb3d973ab2b6197517b0cc0685",
+            "name": "List of all the groups associated to the user.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "write",
+                    "description": "Write permission",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "67436585ab22c9827591485e822bc18f",
+            "name": "Create a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "22e02be0a0d0a9dbcfa40ce32b55f112",
+            "name": "Delete group specified by id",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "eb5927a3edf2e3922ac3e9de06354694",
+            "name": "Get a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ab38d29c543b306ccd6a4bf0b5a384e",
+            "name": "Update a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "18ee4f3f865511ce3bf9f2ddce1c348a",
+            "name": "Retrieve statistics about this group for a timeframe",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "d355560d1acaa76b0748c269ad53b76c",
+            "name": "Retrieve statistics about this group for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "f036556572c6137abd44e95676d70325",
+            "name": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated\/summary",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "6fcd7f8b9ec0943cda36125af2f19af4",
+            "name": "List of all the datapoints associated to the user in this group.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "bceffef94bf5e5e782ea03d3512132c0",
+            "name": "Create a datapoint in this group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "345187bd4bfd1a2c82b1e4e76a3172bf",
+            "name": "Count the datapoints associated to the user in this group.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c133986bc7c1672b8dd0b854aff4268",
+            "name": "Fast switch the \"favourite\" field of a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/favourite",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "ef655705c0888879dc770afef95e1f69",
+            "name": "Retrieve the list of events related to this group.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/hits",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "15da52e0a8bd87228b266aad19682bdb",
+            "name": "Fast patch the \"notes\" field of a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/notes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd745427e1d4cdeb1322ebe0df328d1d",
+            "name": "Retrieve a top report connected to this group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/{id}\/reports",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hittype",
+                    "description": "Type of the event you want to filter this report with. By default no filter is applied.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "37274370b7b01d6b5493b997a0c7f2f9",
+            "name": "Retrieve statistics about this customer for a timeframe by groups",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/aggregated",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hourly",
+                    "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5b7ced0faf6993e99d190fe52dfb84b",
+            "name": "Retrieve statistics about all groups of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/aggregated\/list",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag",
+                    "description": "A comma separated list of tags you want to filter with.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "favourite",
+                    "description": "Is the datapoint marked as favourite",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupBy",
+                    "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\".",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc54d7e182ea2bd91232a75f1503e7be",
+            "name": "Count the groups associated to the user.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/groups\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "write",
+                    "description": "Write permission",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "a6a6fb7e861e3d5fd722e2fee07e2b39",
+            "name": "Retrieve the list of events related to this account.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/hits",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2b96779ca9c2a3d82ce774fc93dc95c",
+            "name": "Retrieve current account data",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/me",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "f77754630f6707397be3645664dc75d3",
+            "name": "Retrieve current account plan",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/me\/plan",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "e9fdd299850a94e4b8091489a75cd0f4",
+            "name": "Retrieve a top report",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/reports",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "timeFrame",
+                    "description": "Timeframe of the request. See list at $timeframeList",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hittype",
+                    "description": "Type of the event you want to filter this report with. By default no filter is applied.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "Filter by this group id (mutually exclusive with \"datapoint\" and \"conversion\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "datapoint",
+                    "description": "Filter by this datapoint id (mutually exclusive with \"group\" and \"conversion\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "conversion",
+                    "description": "Filter by this conversion id (mutually exclusive with \"datapoint\" and \"group\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fromDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "toDay",
+                    "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "e559db3be18da710d52a05cb12b46fb0",
+            "name": "List of all the retargeting scripts associated to the user",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac2af67566c4e81ed8b6b7277901d7d7",
+            "name": "Creates a retargeting script",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c96f3f8bd2c151d86a750819444fc959",
+            "name": "Deletes a retargeting script (and remove associations)",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c98749678ee087ea2ef7011b072c292d",
+            "name": "Get a retargeting script object",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8147bbd4743cbbe67abbbfe5f7f32f9",
+            "name": "Updates a retargeting script",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "c192168de6cf91c239468c23f1c6a505",
+            "name": "List of all the datapoints associated to the retargeting script.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/{id}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortBy",
+                    "description": "Field to sort by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortDirection",
+                    "description": "Direction of sort \"asc\" or \"desc\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "6f95656a69f5bad6ae9cd917a56785f4",
+            "name": "Count the datapoints associated to the retargeting script.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/{id}\/datapoints\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the datapoint",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filter by this tag name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onlyFavorites",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "05a003de38d1f69936cd0d227bb0480c",
+            "name": "Retrieve count of retargeting scripts",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/retargeting\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "fada1392d9593c98fadfbeeea586001b",
+            "name": "List of all the groups associated to the user filtered by this tag.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Filter domains with this anmen",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "datapoints",
+                    "description": "Comma separated list of datapoints id to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groups",
+                    "description": "Comma separated list of groups id to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "186b70e141427b7b9b3cc53b5da5918f",
+            "name": "Create a tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "d010c3ce9c77a2569f01b6cc56dc5524",
+            "name": "Delete a tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "69da8275018c722314d17809c84b54ac",
+            "name": "Retrieve a tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a0ce5e6db54ec42283350549a2ccb27",
+            "name": "Delete the association of this tag with all datapoints",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "debf27c56130507b3c62c6dc64111556",
+            "name": "List of all the datapoints associated to the user filtered by this tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "83b173163c8078018ce00ba5da5bd43f",
+            "name": "Count the datapoints associated to the user filtered by this tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cf024d8cb4f6ca9925de16c7dcfcbdb",
+            "name": "Associate\/Deassociate a tag with a datapoint",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "461d5cb4b23da56110cb91a8abedca0c",
+            "name": "Delete the association of this tag with all groups",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ea055d41847a2f2dab6d91c28912954",
+            "name": "List of all the groups associated to the user filtered by this tag.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset where to start from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit results to this number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "d3bfbf64f611e59b92c9a6cea98516f8",
+            "name": "Count the groups associated to the user filtered by this tag",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Status of conversion (\"deleted\"\/\"active\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "textSearch",
+                    "description": "Filter fields by this pattern",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdAfter",
+                    "description": "Exclude conversions created before this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBefore",
+                    "description": "Exclude conversions created after this date (YYYYMMDD)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "f550f76f21cd4d244c95e10862a7e4f5",
+            "name": "Associate\/Deassociate a tag with a group",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups\/patch",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed169e306bfab7a673ea9fa85f0ea2af",
+            "name": "Fast patch a tag name",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/{tagId}\/name",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tagId",
+                    "description": "Id of the tag",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        },
+        {
+            "id": "80cd8d34111e07118246a83f4c6ef048",
+            "name": "List of all the groups associated to the user filtered by this tag.",
+            "url": "http:\/\/apiv2.clickmeter.com:80\/\/tags\/count",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "Filter domains with this anmen",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "datapoints",
+                    "description": "Comma separated list of datapoints id to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groups",
+                    "description": "Comma separated list of groups id to filter by",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Can be \"w\" or \"r\"",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "285820fcb4a33d68d421d5f22da53ced",
+            "rawModeData": ""
+        }
+    ]
+}
