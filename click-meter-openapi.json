@@ -1,0 +1,4512 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v2",
+        "title": "Click Meter",
+        "description": "Api dashboard for ClickMeter API",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapiv2.clickmeter.com:80\/"
+    ],
+    "paths": {
+        "\/account": {
+            "get": {
+                "summary": "Retrieve current account data",
+                "description": "Retrieve current account data.",
+                "operationId": "GetAccount",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Update current account data",
+                "description": "Update current account data.",
+                "operationId": "PostAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/account\/domainwhitelist": {
+            "get": {
+                "summary": "Retrieve list of a domains allowed to redirect in DDU mode",
+                "description": "Retrieve list of a domains allowed to redirect in ddu mode.",
+                "operationId": "GetAccountDomainwhitelist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an domain entry",
+                "description": "Create an domain entry.",
+                "operationId": "PostAccountDomainwhitelist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/account\/domainwhitelist\/{whitelistId}": {
+            "delete": {
+                "summary": "Delete an domain entry",
+                "description": "Delete an domain entry.",
+                "operationId": "DeleteAccountDomainwhitelistWhitelist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "whitelistId",
+                        "in": "path",
+                        "description": "The id of the domain to delete"
+                    }
+                ]
+            }
+        },
+        "\/account\/guests": {
+            "get": {
+                "summary": "Retrieve list of a guest",
+                "description": "Retrieve list of a guest.",
+                "operationId": "GetAccountGuests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a guest",
+                "description": "Create a guest.",
+                "operationId": "PostAccountGuests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/account\/guests\/count": {
+            "get": {
+                "summary": "Retrieve count of guests",
+                "description": "Retrieve count of guests.",
+                "operationId": "GetAccountGuestsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            }
+        },
+        "\/account\/guests\/{guestId}": {
+            "delete": {
+                "summary": "Delete a guest",
+                "description": "Delete a guest.",
+                "operationId": "DeleteAccountGuestsGuest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Retrieve a guest",
+                "description": "Retrieve a guest.",
+                "operationId": "GetAccountGuestsGuest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a guest",
+                "description": "Update a guest.",
+                "operationId": "PostAccountGuestsGuest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/account\/guests\/{guestId}\/permissions": {
+            "get": {
+                "summary": "Retrieve permissions for a guest",
+                "description": "Retrieve permissions for a guest.",
+                "operationId": "GetAccountGuestsGuestPermissions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    },
+                    {
+                        "name": "entityType",
+                        "in": "query",
+                        "description": "Can be \"datapoint\" or \"group\""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "entityId",
+                        "in": "query",
+                        "description": "Optional id of the datapoint\/group entity to filter by"
+                    }
+                ]
+            }
+        },
+        "\/account\/guests\/{guestId}\/permissions\/count": {
+            "get": {
+                "summary": "Retrieve count of the permissions for a guest",
+                "description": "Retrieve count of the permissions for a guest.",
+                "operationId": "GetAccountGuestsGuestPermissionsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    },
+                    {
+                        "name": "entityType",
+                        "in": "query",
+                        "description": "Can be \"datapoint\" or \"group\""
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "entityId",
+                        "in": "query",
+                        "description": "Optional id of the datapoint\/group entity to filter by"
+                    }
+                ]
+            }
+        },
+        "\/account\/guests\/{guestId}\/{type}\/permissions\/patch": {
+            "post": {
+                "summary": "Change the permission on a shared object",
+                "description": "Change the permission on a shared object.",
+                "operationId": "PostAccountGuestsGuestTypePermissionsPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    },
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "description": "Can be \"datapoint\" or \"group\""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The patch permission request"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Change the permission on a shared object",
+                "description": "Change the permission on a shared object.",
+                "operationId": "PutAccountGuestsGuestTypePermissionsPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "guestId",
+                        "in": "path",
+                        "description": "Id of the guest"
+                    },
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "description": "Can be \"datapoint\" or \"group\""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The patch permission request"
+                    }
+                ]
+            }
+        },
+        "\/account\/ipblacklist": {
+            "get": {
+                "summary": "Retrieve list of a ip to exclude from event tracking",
+                "description": "Retrieve list of a ip to exclude from event tracking.",
+                "operationId": "GetAccountIpblacklist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an ip blacklist entry",
+                "description": "Create an ip blacklist entry.",
+                "operationId": "PostAccountIpblacklist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/account\/ipblacklist\/{blacklistId}": {
+            "delete": {
+                "summary": "Delete an ip blacklist entry",
+                "description": "Delete an ip blacklist entry.",
+                "operationId": "DeleteAccountIpblacklistBlacklist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "blacklistId",
+                        "in": "path",
+                        "description": "The id of the ip to delete"
+                    }
+                ]
+            }
+        },
+        "\/account\/plan": {
+            "get": {
+                "summary": "Retrieve current account plan",
+                "description": "Retrieve current account plan.",
+                "operationId": "GetAccountPlan",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this customer for a timeframe",
+                "description": "Retrieve statistics about this customer for a timeframe.",
+                "operationId": "GetAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/aggregated\/summary\/conversions": {
+            "get": {
+                "summary": "Retrieve statistics about a subset of conversions for a timeframe with conversions data",
+                "description": "Retrieve statistics about a subset of conversions for a timeframe with conversions data.",
+                "operationId": "GetAggregatedSummaryConversions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            }
+        },
+        "\/aggregated\/summary\/datapoints": {
+            "get": {
+                "summary": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
+                "description": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data.",
+                "operationId": "GetAggregatedSummaryDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "groupId",
+                        "in": "query",
+                        "description": "Filter by this group id"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            }
+        },
+        "\/aggregated\/summary\/groups": {
+            "get": {
+                "summary": "Retrieve statistics about a subset of groups for a timeframe with groups data",
+                "description": "Retrieve statistics about a subset of groups for a timeframe with groups data.",
+                "operationId": "GetAggregatedSummaryGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            }
+        },
+        "\/clickstream": {
+            "get": {
+                "summary": "Retrieve the latest list of events of this account. Limited to last 100.",
+                "description": "Retrieve the latest list of events of this account. limited to last 100..",
+                "operationId": "GetClickstream",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": "Filter by this group id (mutually exclusive with \"datapoint\" and \"conversion\")"
+                    },
+                    {
+                        "name": "datapoint",
+                        "in": "query",
+                        "description": "Filter by this datapoint id (mutually exclusive with \"group\" and \"conversion\")"
+                    },
+                    {
+                        "name": "conversion",
+                        "in": "query",
+                        "description": "Filter by this conversion id (mutually exclusive with \"datapoint\" and \"group\")"
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")"
+                    }
+                ]
+            }
+        },
+        "\/conversions": {
+            "get": {
+                "summary": "Retrieve a list of conversions",
+                "description": "Retrieve a list of conversions.",
+                "operationId": "GetConversions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a conversion",
+                "description": "Create a conversion.",
+                "operationId": "PostConversions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/conversions\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about this customer for a timeframe related to a subset of conversions grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about this customer for a timeframe related to a subset of conversions grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetConversionsAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/conversions\/count": {
+            "get": {
+                "summary": "Retrieve a count of conversions",
+                "description": "Retrieve a count of conversions.",
+                "operationId": "GetConversionsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}": {
+            "delete": {
+                "summary": "Delete conversion specified by id",
+                "description": "Delete conversion specified by id.",
+                "operationId": "DeleteConversionsConversion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Retrieve conversion specified by id",
+                "description": "Retrieve conversion specified by id.",
+                "operationId": "GetConversionsConversion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update conversion specified by id",
+                "description": "Update conversion specified by id.",
+                "operationId": "PostConversionsConversion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this conversion for a timeframe",
+                "description": "Retrieve statistics about this conversion for a timeframe.",
+                "operationId": "GetConversionsConversionAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about this conversion for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about this conversion for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetConversionsConversionAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/datapoints": {
+            "get": {
+                "summary": "Retrieve a list of datapoints connected to this conversion",
+                "description": "Retrieve a list of datapoints connected to this conversion.",
+                "operationId": "GetConversionsConversionDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/datapoints\/batch\/patch": {
+            "put": {
+                "summary": "Modify the association between a conversion and multiple datapoints",
+                "description": "Modify the association between a conversion and multiple datapoints.",
+                "operationId": "PutConversionsConversionDatapointsBatchPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/datapoints\/count": {
+            "get": {
+                "summary": "Retrieve a count of datapoints connected to this conversion",
+                "description": "Retrieve a count of datapoints connected to this conversion.",
+                "operationId": "GetConversionsConversionDatapointsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/datapoints\/patch": {
+            "put": {
+                "summary": "Modify the association between a conversion and a datapoint",
+                "description": "Modify the association between a conversion and a datapoint.",
+                "operationId": "PutConversionsConversionDatapointsPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/hits": {
+            "get": {
+                "summary": "Retrieve the list of events related to this conversion.",
+                "description": "Retrieve the list of events related to this conversion..",
+                "operationId": "GetConversionsConversionHits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/notes": {
+            "put": {
+                "summary": "Fast patch the \"notes\" field of a conversion",
+                "description": "Fast patch the \"notes\" field of a conversion.",
+                "operationId": "PutConversionsConversionNotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "note",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/conversions\/{conversionId}\/reports": {
+            "get": {
+                "summary": "Retrieve a top report connected to this conversion",
+                "description": "Retrieve a top report connected to this conversion.",
+                "operationId": "GetConversionsConversionReports",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversionId",
+                        "in": "path",
+                        "description": "Id of the conversion"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "hittype",
+                        "in": "query",
+                        "description": "Type of the event you want to filter this report with. By default no filter is applied."
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/datapoints": {
+            "get": {
+                "summary": "List of all the datapoints associated to the user",
+                "description": "List of all the datapoints associated to the user.",
+                "operationId": "GetDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a datapoint",
+                "description": "Create a datapoint.",
+                "operationId": "PostDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this customer for a timeframe by groups",
+                "description": "Retrieve statistics about this customer for a timeframe by groups.",
+                "operationId": "GetDatapointsAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about all datapoints of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about all datapoints of this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetDatapointsAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/batch": {
+            "delete": {
+                "summary": "Delete multiple datapoints",
+                "description": "Delete multiple datapoints.",
+                "operationId": "DeleteDatapointsBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "batch",
+                        "in": "body",
+                        "description": "A json containing the datapoints to delete."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update multiple datapoints",
+                "description": "Update multiple datapoints.",
+                "operationId": "PostDatapointsBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "batch",
+                        "in": "body",
+                        "description": "A json containing the datapoints to delete."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Create multiple datapoints",
+                "description": "Create multiple datapoints.",
+                "operationId": "PutDatapointsBatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "batch",
+                        "in": "body",
+                        "description": "A json containing the datapoints to delete."
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/count": {
+            "get": {
+                "summary": "Count the datapoints associated to the user",
+                "description": "Count the datapoints associated to the user.",
+                "operationId": "GetDatapointsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}": {
+            "delete": {
+                "summary": "Delete a datapoint",
+                "description": "Delete a datapoint.",
+                "operationId": "DeleteDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a datapoint",
+                "description": "Get a datapoint.",
+                "operationId": "GetDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a datapoint",
+                "description": "Update a datapoint.",
+                "operationId": "PostDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this datapoint for a timeframe",
+                "description": "Retrieve statistics about this datapoint for a timeframe.",
+                "operationId": "GetDatapointsAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about this datapoint for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about this datapoint for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetDatapointsAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/favourite": {
+            "put": {
+                "summary": "Fast switch the \"favourite\" field of a datapoint",
+                "description": "Fast switch the \"favourite\" field of a datapoint.",
+                "operationId": "PutDatapointsFavourite",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/hits": {
+            "get": {
+                "summary": "Retrieve the list of events related to this datapoint.",
+                "description": "Retrieve the list of events related to this datapoint..",
+                "operationId": "GetDatapointsHits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/notes": {
+            "put": {
+                "summary": "Fast patch the \"notes\" field of a datapoint",
+                "description": "Fast patch the \"notes\" field of a datapoint.",
+                "operationId": "PutDatapointsNotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "note",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/datapoints\/{id}\/reports": {
+            "get": {
+                "summary": "Retrieve a top report connected to this datapoint",
+                "description": "Retrieve a top report connected to this datapoint.",
+                "operationId": "GetDatapointsReports",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/domains": {
+            "get": {
+                "summary": "Retrieve a list of domains",
+                "description": "Retrieve a list of domains.",
+                "operationId": "GetDomains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter domains with this anmen"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a domain",
+                "description": "Create a domain.",
+                "operationId": "PostDomains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/domains\/count": {
+            "get": {
+                "summary": "Retrieve count of domains",
+                "description": "Retrieve count of domains.",
+                "operationId": "GetDomainsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter domains with this anmen"
+                    }
+                ]
+            }
+        },
+        "\/domains\/{id}": {
+            "delete": {
+                "summary": "Delete a domain",
+                "description": "Delete a domain.",
+                "operationId": "DeleteDomains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a domain",
+                "description": "Get a domain.",
+                "operationId": "GetDomains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a domain",
+                "description": "Update a domain.",
+                "operationId": "PostDomains",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups": {
+            "get": {
+                "summary": "List of all the groups associated to the user.",
+                "description": "List of all the groups associated to the user..",
+                "operationId": "GetGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "write",
+                        "in": "query",
+                        "description": "Write permission"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a group",
+                "description": "Create a group.",
+                "operationId": "PostGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this customer for a timeframe by groups",
+                "description": "Retrieve statistics about this customer for a timeframe by groups.",
+                "operationId": "GetGroupsAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    }
+                ]
+            }
+        },
+        "\/groups\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about all groups of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about all groups of this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetGroupsAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/groups\/count": {
+            "get": {
+                "summary": "Count the groups associated to the user.",
+                "description": "Count the groups associated to the user..",
+                "operationId": "GetGroupsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "write",
+                        "in": "query",
+                        "description": "Write permission"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}": {
+            "delete": {
+                "summary": "Delete group specified by id",
+                "description": "Delete group specified by id.",
+                "operationId": "DeleteGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a group",
+                "description": "Get a group.",
+                "operationId": "GetGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update a group",
+                "description": "Update a group.",
+                "operationId": "PostGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/aggregated": {
+            "get": {
+                "summary": "Retrieve statistics about this group for a timeframe",
+                "description": "Retrieve statistics about this group for a timeframe.",
+                "operationId": "GetGroupsAggregated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "hourly",
+                        "in": "query",
+                        "description": "If using \"yesterday\" or \"today\" timeframe you can ask for the hourly detail"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/aggregated\/list": {
+            "get": {
+                "summary": "Retrieve statistics about this group for a timeframe grouped by some temporal entity (day\/week\/month)",
+                "description": "Retrieve statistics about this group for a timeframe grouped by some temporal entity (day\/week\/month).",
+                "operationId": "GetGroupsAggregatedList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "groupBy",
+                        "in": "query",
+                        "description": "The temporal entity you want to group by (\"week\"\/\"month\"). If unspecified is \"day\"."
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/aggregated\/summary": {
+            "get": {
+                "summary": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
+                "description": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data.",
+                "operationId": "GetGroupsAggregatedSummary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tag",
+                        "in": "query",
+                        "description": "A comma separated list of tags you want to filter with."
+                    },
+                    {
+                        "name": "favourite",
+                        "in": "query",
+                        "description": "Is the datapoint marked as favourite"
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/datapoints": {
+            "get": {
+                "summary": "List of all the datapoints associated to the user in this group.",
+                "description": "List of all the datapoints associated to the user in this group..",
+                "operationId": "GetGroupsDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a datapoint in this group",
+                "description": "Create a datapoint in this group.",
+                "operationId": "PostGroupsDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/datapoints\/count": {
+            "get": {
+                "summary": "Count the datapoints associated to the user in this group.",
+                "description": "Count the datapoints associated to the user in this group..",
+                "operationId": "GetGroupsDatapointsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/favourite": {
+            "put": {
+                "summary": "Fast switch the \"favourite\" field of a group",
+                "description": "Fast switch the \"favourite\" field of a group.",
+                "operationId": "PutGroupsFavourite",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/hits": {
+            "get": {
+                "summary": "Retrieve the list of events related to this group.",
+                "description": "Retrieve the list of events related to this group..",
+                "operationId": "GetGroupsHits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/notes": {
+            "put": {
+                "summary": "Fast patch the \"notes\" field of a group",
+                "description": "Fast patch the \"notes\" field of a group.",
+                "operationId": "PutGroupsNotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "note",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{id}\/reports": {
+            "get": {
+                "summary": "Retrieve a top report connected to this group",
+                "description": "Retrieve a top report connected to this group.",
+                "operationId": "GetGroupsReports",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "hittype",
+                        "in": "query",
+                        "description": "Type of the event you want to filter this report with. By default no filter is applied."
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/hits": {
+            "get": {
+                "summary": "Retrieve the list of events related to this account.",
+                "description": "Retrieve the list of events related to this account..",
+                "operationId": "GetHits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filter event type (\"spiders\"\/\"uniques\"\/\"nonuniques\"\/\"conversions\")"
+                    }
+                ]
+            }
+        },
+        "\/me": {
+            "get": {
+                "summary": "Retrieve current account data",
+                "description": "Retrieve current account data.",
+                "operationId": "GetMe",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/plan": {
+            "get": {
+                "summary": "Retrieve current account plan",
+                "description": "Retrieve current account plan.",
+                "operationId": "GetMePlan",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/reports": {
+            "get": {
+                "summary": "Retrieve a top report",
+                "description": "Retrieve a top report.",
+                "operationId": "GetReports",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "timeFrame",
+                        "in": "query",
+                        "description": "Timeframe of the request. See list at $timeframeList"
+                    },
+                    {
+                        "name": "hittype",
+                        "in": "query",
+                        "description": "Type of the event you want to filter this report with. By default no filter is applied."
+                    },
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": "Filter by this group id (mutually exclusive with \"datapoint\" and \"conversion\")"
+                    },
+                    {
+                        "name": "datapoint",
+                        "in": "query",
+                        "description": "Filter by this datapoint id (mutually exclusive with \"group\" and \"conversion\")"
+                    },
+                    {
+                        "name": "conversion",
+                        "in": "query",
+                        "description": "Filter by this conversion id (mutually exclusive with \"datapoint\" and \"group\")"
+                    },
+                    {
+                        "name": "fromDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the starting day (YYYYMMDD)"
+                    },
+                    {
+                        "name": "toDay",
+                        "in": "query",
+                        "description": "If using a \"custom\" timeFrame you can specify the ending day (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/retargeting": {
+            "get": {
+                "summary": "List of all the retargeting scripts associated to the user",
+                "description": "List of all the retargeting scripts associated to the user.",
+                "operationId": "GetRetargeting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates a retargeting script",
+                "description": "Creates a retargeting script.",
+                "operationId": "PostRetargeting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/retargeting\/count": {
+            "get": {
+                "summary": "Retrieve count of retargeting scripts",
+                "description": "Retrieve count of retargeting scripts.",
+                "operationId": "GetRetargetingCount",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/retargeting\/{id}": {
+            "delete": {
+                "summary": "Deletes a retargeting script (and remove associations)",
+                "description": "Deletes a retargeting script (and remove associations).",
+                "operationId": "DeleteRetargeting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get a retargeting script object",
+                "description": "Get a retargeting script object.",
+                "operationId": "GetRetargeting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Updates a retargeting script",
+                "description": "Updates a retargeting script.",
+                "operationId": "PostRetargeting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/retargeting\/{id}\/datapoints": {
+            "get": {
+                "summary": "List of all the datapoints associated to the retargeting script.",
+                "description": "List of all the datapoints associated to the retargeting script..",
+                "operationId": "GetRetargetingDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sortBy",
+                        "in": "query",
+                        "description": "Field to sort by"
+                    },
+                    {
+                        "name": "sortDirection",
+                        "in": "query",
+                        "description": "Direction of sort \"asc\" or \"desc\""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/retargeting\/{id}\/datapoints\/count": {
+            "get": {
+                "summary": "Count the datapoints associated to the retargeting script.",
+                "description": "Count the datapoints associated to the retargeting script..",
+                "operationId": "GetRetargetingDatapointsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the datapoint"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "tags",
+                        "in": "query",
+                        "description": "Filter by this tag name"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "onlyFavorites",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/tags": {
+            "get": {
+                "summary": "List of all the groups associated to the user filtered by this tag.",
+                "description": "List of all the groups associated to the user filtered by this tag..",
+                "operationId": "GetTags",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter domains with this anmen"
+                    },
+                    {
+                        "name": "datapoints",
+                        "in": "query",
+                        "description": "Comma separated list of datapoints id to filter by"
+                    },
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": "Comma separated list of groups id to filter by"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a tag",
+                "description": "Create a tag.",
+                "operationId": "PostTags",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tags\/count": {
+            "get": {
+                "summary": "List of all the groups associated to the user filtered by this tag.",
+                "description": "List of all the groups associated to the user filtered by this tag..",
+                "operationId": "GetTagsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter domains with this anmen"
+                    },
+                    {
+                        "name": "datapoints",
+                        "in": "query",
+                        "description": "Comma separated list of datapoints id to filter by"
+                    },
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": "Comma separated list of groups id to filter by"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}": {
+            "delete": {
+                "summary": "Delete a tag",
+                "description": "Delete a tag.",
+                "operationId": "DeleteTagsTag",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Retrieve a tag",
+                "description": "Retrieve a tag.",
+                "operationId": "GetTagsTag",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/datapoints": {
+            "delete": {
+                "summary": "Delete the association of this tag with all datapoints",
+                "description": "Delete the association of this tag with all datapoints.",
+                "operationId": "DeleteTagsTagDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "List of all the datapoints associated to the user filtered by this tag",
+                "description": "List of all the datapoints associated to the user filtered by this tag.",
+                "operationId": "GetTagsTagDatapoints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/datapoints\/count": {
+            "get": {
+                "summary": "Count the datapoints associated to the user filtered by this tag",
+                "description": "Count the datapoints associated to the user filtered by this tag.",
+                "operationId": "GetTagsTagDatapointsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Can be \"w\" or \"r\""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/datapoints\/patch": {
+            "put": {
+                "summary": "Associate\/Deassociate a tag with a datapoint",
+                "description": "Associate\/deassociate a tag with a datapoint.",
+                "operationId": "PutTagsTagDatapointsPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/groups": {
+            "delete": {
+                "summary": "Delete the association of this tag with all groups",
+                "description": "Delete the association of this tag with all groups.",
+                "operationId": "DeleteTagsTagGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "List of all the groups associated to the user filtered by this tag.",
+                "description": "List of all the groups associated to the user filtered by this tag..",
+                "operationId": "GetTagsTagGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset where to start from"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit results to this number"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/groups\/count": {
+            "get": {
+                "summary": "Count the groups associated to the user filtered by this tag",
+                "description": "Count the groups associated to the user filtered by this tag.",
+                "operationId": "GetTagsTagGroupsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status of conversion (\"deleted\"\/\"active\")"
+                    },
+                    {
+                        "name": "textSearch",
+                        "in": "query",
+                        "description": "Filter fields by this pattern"
+                    },
+                    {
+                        "name": "createdAfter",
+                        "in": "query",
+                        "description": "Exclude conversions created before this date (YYYYMMDD)"
+                    },
+                    {
+                        "name": "createdBefore",
+                        "in": "query",
+                        "description": "Exclude conversions created after this date (YYYYMMDD)"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/groups\/patch": {
+            "put": {
+                "summary": "Associate\/Deassociate a tag with a group",
+                "description": "Associate\/deassociate a tag with a group.",
+                "operationId": "PutTagsTagGroupsPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        },
+        "\/tags\/{tagId}\/name": {
+            "put": {
+                "summary": "Fast patch a tag name",
+                "description": "Fast patch a tag name.",
+                "operationId": "PutTagsTagName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tagId",
+                        "in": "path",
+                        "description": "Id of the tag"
+                    },
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "description": "Patch requests"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Api.Core.Dto.Accounting.ConversionOptions": {
+                "type": "object",
+                "properties": {
+                    "hideComCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideParams": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideValue": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "percentCommission": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "percentValue": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.DomainWhitelistEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.ExtendedGrants": {
+                "type": "object",
+                "properties": {
+                    "allowAllGrants": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "allowGroupCreation": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.Guest": {
+                "type": "object",
+                "properties": {
+                    "apiKey": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "creationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "dateFormat": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "decimalSeparator": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groupGrants": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "loginCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "numberGroupSeparator": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "password": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timeFormat": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timeframeMinDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timezonename": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tlGrants": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tpGrants": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.HitOptions": {
+                "type": "object",
+                "properties": {
+                    "hideReferrer": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.IpBlacklistEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "ip": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.Plan": {
+                "type": "object",
+                "properties": {
+                    "allowedPersonalDomains": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "allowedPersonalUrls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "billingPeriodEnd": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "billingPeriodStart": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "bonusMonthlyEvents": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "maximumDatapoints": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "maximumGuests": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "monthlyEvents": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "price": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "profileId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "recurring": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "recurringPeriod": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "usedDatapoints": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "usedMonthlyEvents": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Accounting.User": {
+                "type": "object",
+                "properties": {
+                    "boGoVal": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "bonusClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "companyName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "companyRole": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "phone": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "redirectOnly": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "registrationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timeframeMinDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timeZone": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timezonename": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Aggregated.AggregatedResult": {
+                "type": "object",
+                "properties": {
+                    "activityDay": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "commissionsCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "conversionsCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "conversionsValue": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "convertedClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "entityId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fromDay": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hourlyBreakDown": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastHitDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spiderHitsCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "toDay": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalViews": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueConversions": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueViews": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Aggregated.AggregatedSummaryResult": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.Hit": {
+                "type": "object",
+                "properties": {
+                    "accessTime": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "clientLanguage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "conversions": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "ip": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isProxy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isSpider": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isUnique": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "org": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "queryParams": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "realDestinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "referer": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitBrowserInfo": {
+                "type": "object",
+                "properties": {
+                    "browserType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "familyId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "familyName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitConversionInfo": {
+                "type": "object",
+                "properties": {
+                    "accessTime": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "comcost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "cost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "date": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "parameter": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitDatapointInfo": {
+                "type": "object",
+                "properties": {
+                    "creationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "datapointFavourite": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "datapointId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "datapointName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "datapointTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "datapointType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "destinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groupName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isABTest": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isPrivateShared": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isPublic": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "trackingCode": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitListPage": {
+                "type": "object",
+                "properties": {
+                    "hits": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastKey": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitLocationInfo": {
+                "type": "object",
+                "properties": {
+                    "areacode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "latitude": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "longitude": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "metrocode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "organization": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "postalcode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "region": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "regionName": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitOsInfo": {
+                "type": "object",
+                "properties": {
+                    "familyId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "familyName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.ClickStream.HitSource": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "param": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Conversions.Conversion": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "creationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "protocol": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.BrowserBaseDestinationItem": {
+                "type": "object",
+                "properties": {
+                    "emailDestinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "mobileDestinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spidersDestinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.Datapoint": {
+                "type": "object",
+                "properties": {
+                    "creationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "encodeIp": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fifthConversionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fifthConversionName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "firstConversionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "firstConversionName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fourthConversionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fourthConversionName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groupName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isPublic": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isSecured": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lightTracking": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preferred": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "redirectOnly": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "secondConversionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "secondConversionName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "thirdConversionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "thirdConversionName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "trackingCode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "writePermited": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.DatapointRetargetingInfo": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.MultipleDestinationItem": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.TrackingLinkSpecifics": {
+                "type": "object",
+                "properties": {
+                    "appendQuery": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "destinationMode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "domainId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "encodeUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "expirationClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "expirationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "firstUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "goDomainId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideUrl": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hideUrlTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isABTest": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "password": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pauseAfterClicksExpiration": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pauseAfterDateExpiration": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "randomDestinationItems": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "redirectType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "referrerClean": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "scripts": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "sequentialDestinationItems": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spilloverDestinationItems": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "urlAfterClicksExpiration": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "urlAfterDateExpiration": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "urlsByLanguage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "urlsByNation": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "weightedDestinationItems": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.TrackingPixelSpecifics": {
+                "type": "object",
+                "properties": {
+                    "parameterNote": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.UniqueDestinationItem": {
+                "type": "object",
+                "properties": {
+                    "firstDestinationUrl": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.UrlByLanguageItem": {
+                "type": "object",
+                "properties": {
+                    "languageCode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.UrlByNationItem": {
+                "type": "object",
+                "properties": {
+                    "nation": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Datapoints.WeightedDestinationItem": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "weight": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Domains.Domain": {
+                "type": "object",
+                "properties": {
+                    "custom404": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customHomepage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.EntityUriLong": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Grants.Grant": {
+                "type": "object",
+                "properties": {
+                    "datapointType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "EntityName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "EntityType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Groups.Group": {
+                "type": "object",
+                "properties": {
+                    "creationDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isPublic": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preferred": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "redirectOnly": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "writePermited": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Retargeting.RetargetingScript": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "script": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Tags.Tag": {
+                "type": "object",
+                "properties": {
+                    "datapoints": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Tops.Top": {
+                "type": "object",
+                "properties": {
+                    "createdAt": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Dto.Tops.TopItem": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastHitDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spiderClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spiderHits": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "spiderViews": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalCommissionsCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalConversions": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalConversionsCost": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalConversionsValue": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalHits": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "totalViews": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueClicks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueHits": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uniqueViews": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.ConversionPatchBody": {
+                "type": "object",
+                "properties": {
+                    "Action": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "ReplaceId": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.DatapointsBatch": {
+                "type": "object",
+                "properties": {
+                    "List": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.DeleteBatch": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.GenericTextPatch": {
+                "type": "object",
+                "properties": {
+                    "Text": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.PatchBody": {
+                "type": "object",
+                "properties": {
+                    "Action": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.PatchBodyBatch": {
+                "type": "object",
+                "properties": {
+                    "PatchRequests": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Requests.PermissionPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "Action": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "Verb": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.CountResponce": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Dto.Accounting.DomainWhitelistEntry]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Dto.Accounting.IpBlacklistEntry]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Dto.Aggregated.AggregatedResult]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Dto.ClickStream.Hit]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Dto.Grants.Grant]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntitiesResponse[Api.Core.Responses.EntityUri[System.Int64]]": {
+                "type": "object",
+                "properties": {
+                    "Entities": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.EntityUri[System.Int64]": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Api.Core.Responses.ModifyBatchItemResponce[Api.Core.Dto.Datapoints.Datapoint,System.Int64]": {
+                "type": "object",
+                "properties": {
+                    "errors": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "ClickMeter.Infrastructure.Validation.ValidationFailure": {
+                "type": "object",
+                "properties": {
+                    "errorMessage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "property": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "System.Object": {
+                "type": "object"
+            }
+        }
+    }
+}
