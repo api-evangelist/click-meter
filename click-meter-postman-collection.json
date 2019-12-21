@@ -1,5 +1,5 @@
 {
-    "id": "6651dfd004f0d901db70dfca68ea183c",
+    "id": "29013b7e824e5fffba45ae5064a3536a",
     "name": "Click Meter",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4fc760ee967c3716076c2d5fdeb9d0c8",
+            "id": "a33599963ddd92a1f8146d262fe18dc5",
             "name": "Retrieve current account data",
             "url": "httpsapiv2.clickmeter.com:80\/\/account",
             "description": "Retrieve current account data.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5b007ef8620dc9ecb3a274f7a6bf42d6",
+            "id": "d19498aab1e1c880c2dc5de648a34559",
             "name": "Update current account data",
             "url": "httpsapiv2.clickmeter.com:80\/\/account",
             "description": "Update current account data.",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e0a024705df519bf1caf6f216328b18d",
+            "id": "e4b65239d6d587819ed2e9a11066f0e4",
             "name": "Retrieve list of a domains allowed to redirect in DDU mode",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/domainwhitelist",
             "description": "Retrieve list of a domains allowed to redirect in ddu mode.",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "2b0b2f1d3743b0c2e38dc1b02aded60c",
+            "id": "1e3064f5af8049841e9e8001c2db473a",
             "name": "Create an domain entry",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/domainwhitelist",
             "description": "Create an domain entry.",
@@ -129,11 +129,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "c3e916b3b0668a7676754a72e9022504",
+            "id": "1bc751df538607df32a806d2c3edac91",
             "name": "Delete an domain entry",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/domainwhitelist\/{whitelistId}",
             "description": "Delete an domain entry.",
@@ -160,11 +160,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d804b1880e8fb9716b65794f5bcf473e",
+            "id": "cc5cd66d7c019b7200ad86277639b72b",
             "name": "Retrieve list of a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests",
             "description": "Retrieve list of a guest.",
@@ -219,11 +219,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "4b5a00c35d006e55d0b4410177c3cab5",
+            "id": "c71a910461d06b649f1d11a86b3fffff",
             "name": "Create a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests",
             "description": "Create a guest.",
@@ -250,11 +250,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "942db5c0fe808fdcda8793427475b1e0",
+            "id": "7e3f9b70ce8231cccafd0cca2f2573a0",
             "name": "Retrieve count of guests",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/count",
             "description": "Retrieve count of guests.",
@@ -281,11 +281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5b67672c3d4715b698242237bf1cace2",
+            "id": "3233deca5606c0aaed3314baa1139560",
             "name": "Delete a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
             "description": "Delete a guest.",
@@ -312,11 +312,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b8ea0102b278aa92e926834698466634",
+            "id": "7ae4d5a87931502a4cf982368d8de366",
             "name": "Retrieve a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
             "description": "Retrieve a guest.",
@@ -343,11 +343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "4c468e12dc06aef94bbb6300ab62df42",
+            "id": "7a7903d1eb947d436c2154888e6b6b6a",
             "name": "Update a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}",
             "description": "Update a guest.",
@@ -381,11 +381,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "6834df09cae1a76bd51a27afa6d1209d",
+            "id": "de7f36f54452e97b875ee6de66256f8a",
             "name": "Retrieve permissions for a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/permissions",
             "description": "Retrieve permissions for a guest.",
@@ -447,11 +447,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "9dab05ca8468ee927f92b6e688a335c5",
+            "id": "a2904788ed1a5ef441a1faf4f9ea1ec7",
             "name": "Retrieve count of the permissions for a guest",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/permissions\/count",
             "description": "Retrieve count of the permissions for a guest.",
@@ -499,11 +499,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d672077f62d2d5a78904f80d736950d2",
+            "id": "06ed2d89086820be9f997fc35590abf0",
             "name": "Change the permission on a shared object",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/{type}\/permissions\/patch",
             "description": "Change the permission on a shared object.",
@@ -544,11 +544,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "25e542dd9ec1f5e1aaf8097823ba592e",
+            "id": "55a0fb8946f39076647529e174afa328",
             "name": "Change the permission on a shared object",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/guests\/{guestId}\/{type}\/permissions\/patch",
             "description": "Change the permission on a shared object.",
@@ -589,11 +589,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "7693c0b312166f70b651bee597c2bf63",
+            "id": "64db47997d1bac726055ca2a4ef9f44e",
             "name": "Retrieve list of a ip to exclude from event tracking",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/ipblacklist",
             "description": "Retrieve list of a ip to exclude from event tracking.",
@@ -627,11 +627,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "f3e52711b7860f056070517dec460231",
+            "id": "c5ef65e54b7d89ba933e6ed2d74241b7",
             "name": "Create an ip blacklist entry",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/ipblacklist",
             "description": "Create an ip blacklist entry.",
@@ -658,11 +658,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e41f94b2c5f4d00aab068a5ed263bc05",
+            "id": "4adbfb9d54515473473e290f9426008a",
             "name": "Delete an ip blacklist entry",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/ipblacklist\/{blacklistId}",
             "description": "Delete an ip blacklist entry.",
@@ -689,11 +689,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "8523ca17a68ae479bfcef42e5fbb163b",
+            "id": "e92f1050460f01381256d5070a6ba7e8",
             "name": "Retrieve current account plan",
             "url": "httpsapiv2.clickmeter.com:80\/\/account\/plan",
             "description": "Retrieve current account plan.",
@@ -712,11 +712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "6275dd05f7c1047497afa74e5b619ceb",
+            "id": "bba30ab584c4b1cff8fdbe5a30e27216",
             "name": "Retrieve statistics about this customer for a timeframe",
             "url": "httpsapiv2.clickmeter.com:80\/\/aggregated",
             "description": "Retrieve statistics about this customer for a timeframe.",
@@ -771,11 +771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "33e590694158f21a71732aed1709c853",
+            "id": "7276e454b77c65c749a7603436a84fb9",
             "name": "Retrieve statistics about this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/aggregated\/list",
             "description": "Retrieve statistics about this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -823,11 +823,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "534a29c8de13f196238adbe81a0a7b1d",
+            "id": "281184d81df3a1944dddceb143006e63",
             "name": "Retrieve statistics about a subset of conversions for a timeframe with conversions data",
             "url": "httpsapiv2.clickmeter.com:80\/\/aggregated\/summary\/conversions",
             "description": "Retrieve statistics about a subset of conversions for a timeframe with conversions data.",
@@ -910,11 +910,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "6a3e92ea323f4d9ee47871ad6caaee4f",
+            "id": "75cab8d0ae2ce94ee7c010be7c5a346b",
             "name": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
             "url": "httpsapiv2.clickmeter.com:80\/\/aggregated\/summary\/datapoints",
             "description": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data.",
@@ -1025,11 +1025,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "00e06d538d6cd3338b134663e2e3b61a",
+            "id": "557afcb5b707160a5d1a5c6ec8882454",
             "name": "Retrieve statistics about a subset of groups for a timeframe with groups data",
             "url": "httpsapiv2.clickmeter.com:80\/\/aggregated\/summary\/groups",
             "description": "Retrieve statistics about a subset of groups for a timeframe with groups data.",
@@ -1126,11 +1126,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "fd945ca11d495d32ae98cf8660247b44",
+            "id": "2ee7563c4ccfdfe2f651999b8be3d9d2",
             "name": "Retrieve the latest list of events of this account. Limited to last 100.",
             "url": "httpsapiv2.clickmeter.com:80\/\/clickstream",
             "description": "Retrieve the latest list of events of this account. limited to last 100..",
@@ -1185,11 +1185,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "831d3dd574a2d28e6c2a75029794fb3c",
+            "id": "780127a4de7297fed00e9333a1fe4b8c",
             "name": "Retrieve a list of conversions",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions",
             "description": "Retrieve a list of conversions.",
@@ -1251,11 +1251,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "1ea716d95393a44ab0459d295a695687",
+            "id": "195938ffdeb76df6664aa2b17d525f8a",
             "name": "Create a conversion",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions",
             "description": "Create a conversion.",
@@ -1282,11 +1282,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b33bc53ca995bca180927157e4c29256",
+            "id": "667c6c176754a0041e702562017c374d",
             "name": "Retrieve statistics about this customer for a timeframe related to a subset of conversions grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/aggregated\/list",
             "description": "Retrieve statistics about this customer for a timeframe related to a subset of conversions grouped by some temporal entity (day\/week\/month).",
@@ -1341,11 +1341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5787053713b115b5f62611dc90ce6d60",
+            "id": "72578bceab96240dbfaef7a00e0b59c0",
             "name": "Retrieve a count of conversions",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/count",
             "description": "Retrieve a count of conversions.",
@@ -1393,11 +1393,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "c7512b18e39601440b370875a703b516",
+            "id": "1dfab7f01a43a00574f26f23da767e39",
             "name": "Delete conversion specified by id",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
             "description": "Delete conversion specified by id.",
@@ -1424,11 +1424,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "ca393248ebbbafe378376b7717560cf4",
+            "id": "f99eea7a9f1fb1d723472e0054d112ad",
             "name": "Retrieve conversion specified by id",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
             "description": "Retrieve conversion specified by id.",
@@ -1455,11 +1455,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d8e7e8f8fc8f1db09c47e6f3c09142d1",
+            "id": "bb6959570cdb0876a3934f2a1aab8051",
             "name": "Update conversion specified by id",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}",
             "description": "Update conversion specified by id.",
@@ -1493,11 +1493,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "825375ab9c60493cdb22f9620c984ef3",
+            "id": "991a4133de3913163809a66586f58f3a",
             "name": "Retrieve statistics about this conversion for a timeframe",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/aggregated",
             "description": "Retrieve statistics about this conversion for a timeframe.",
@@ -1566,11 +1566,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "eb587c5143f01b1c41381633b18bcbb4",
+            "id": "da1ea3309df39a7c8db2420a47430033",
             "name": "Retrieve statistics about this conversion for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/aggregated\/list",
             "description": "Retrieve statistics about this conversion for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -1625,11 +1625,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "1fc2d400114115a42756ff38b6a4a65b",
+            "id": "6ac331753d691da87477b8a44dd272ce",
             "name": "Retrieve a list of datapoints connected to this conversion",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints",
             "description": "Retrieve a list of datapoints connected to this conversion.",
@@ -1712,11 +1712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "c10b7a900dd2acd61931fb8da49b60a7",
+            "id": "4c63780c9c1c915f7da6c2a8a1147fd9",
             "name": "Modify the association between a conversion and multiple datapoints",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/batch\/patch",
             "description": "Modify the association between a conversion and multiple datapoints.",
@@ -1750,11 +1750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "556edd5a462afa09dc84fcc7f336536d",
+            "id": "88c2536e60c915b1ef5e5da8cb0d071e",
             "name": "Retrieve a count of datapoints connected to this conversion",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/count",
             "description": "Retrieve a count of datapoints connected to this conversion.",
@@ -1823,11 +1823,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "716f8b67c85d7a6c0c5b1ca0ccb942b5",
+            "id": "aca74b90b6c1893faddd30349f14ddc1",
             "name": "Modify the association between a conversion and a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/datapoints\/patch",
             "description": "Modify the association between a conversion and a datapoint.",
@@ -1861,11 +1861,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "abab89394a37e677723907e5c17c28cb",
+            "id": "b278ade28887c0aa95ab5243c8936fdc",
             "name": "Retrieve the list of events related to this conversion.",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/hits",
             "description": "Retrieve the list of events related to this conversion..",
@@ -1934,11 +1934,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "fa9657e5a8ca1c9a19374f29847646d1",
+            "id": "ae5fab649ed7f576a2fdf86be1615213",
             "name": "Fast patch the \"notes\" field of a conversion",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/notes",
             "description": "Fast patch the \"notes\" field of a conversion.",
@@ -1972,11 +1972,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "4d3afbad37639f57c06cf2cb14f72ae4",
+            "id": "b826c1bdc9ed4d55102a5bbeafcd38b9",
             "name": "Retrieve a top report connected to this conversion",
             "url": "httpsapiv2.clickmeter.com:80\/\/conversions\/{conversionId}\/reports",
             "description": "Retrieve a top report connected to this conversion.",
@@ -2038,11 +2038,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "ccca439821eb1013e5efaafa0245ab74",
+            "id": "81ccc00ace0d922cff937ec35ca380c3",
             "name": "List of all the datapoints associated to the user",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints",
             "description": "List of all the datapoints associated to the user.",
@@ -2139,11 +2139,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "fda594cb6dd228fa9c6f26399ebb8963",
+            "id": "a5f8e6a62587591c05923d20cf4532d0",
             "name": "Create a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints",
             "description": "Create a datapoint.",
@@ -2170,11 +2170,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "1b61e03e648c5a372d4862126e825062",
+            "id": "d7dc4db0fb309662e2132945c26443eb",
             "name": "Retrieve statistics about this customer for a timeframe by groups",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/aggregated",
             "description": "Retrieve statistics about this customer for a timeframe by groups.",
@@ -2250,11 +2250,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "7da6725761c99fa169c1d7fcdb6ddabb",
+            "id": "95cc5e160fab2341391ba60860b8af26",
             "name": "Retrieve statistics about all datapoints of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/aggregated\/list",
             "description": "Retrieve statistics about all datapoints of this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -2330,11 +2330,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5bb07d57a0c42725dc7bd763c7434a6b",
+            "id": "39e60713ded04a3d036698d10b629d74",
             "name": "Delete multiple datapoints",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/batch",
             "description": "Delete multiple datapoints.",
@@ -2361,11 +2361,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "2d9f8b377d3ccf338889bae3431bcf1c",
+            "id": "270da6bb6fda32c2933427fe71ab7600",
             "name": "Update multiple datapoints",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/batch",
             "description": "Update multiple datapoints.",
@@ -2392,11 +2392,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5b5e3956c2e872ac729b452119942a07",
+            "id": "a1425df146f49ea62cb39b19849ad4e6",
             "name": "Create multiple datapoints",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/batch",
             "description": "Create multiple datapoints.",
@@ -2423,11 +2423,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "adf68feb07cd2e99eccd2d7422498739",
+            "id": "db73897d44dc1ce62e4226a09a075fe1",
             "name": "Count the datapoints associated to the user",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/count",
             "description": "Count the datapoints associated to the user.",
@@ -2496,11 +2496,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "efb1f722cc651c084ef7d76c4861cc09",
+            "id": "ffabfb45670dd1653c11c596919129e0",
             "name": "Delete a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}",
             "description": "Delete a datapoint.",
@@ -2527,11 +2527,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d4c77cc89370ee300e5685e7199182e8",
+            "id": "64cf82ef0f04d2a8f77fab0c28433a49",
             "name": "Get a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}",
             "description": "Get a datapoint.",
@@ -2558,11 +2558,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "124524566918fd58ebafb2c1dda39546",
+            "id": "5f882a87ac3f1b2678843e267a8a1dfe",
             "name": "Update a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}",
             "description": "Update a datapoint.",
@@ -2596,11 +2596,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "bd8ba3378b055f811618f29838fce932",
+            "id": "613c3ad778dbf5ba2b0750323398fb7e",
             "name": "Retrieve statistics about this datapoint for a timeframe",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/aggregated",
             "description": "Retrieve statistics about this datapoint for a timeframe.",
@@ -2655,11 +2655,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "4515b286b24be866c28d741b5e8cd416",
+            "id": "d907d050c596c362e150515627be61d8",
             "name": "Retrieve statistics about this datapoint for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/aggregated\/list",
             "description": "Retrieve statistics about this datapoint for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -2714,11 +2714,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "3626be49d679b01730a89a8f3f855a69",
+            "id": "0b179c0b347afa581cd50a0fa6fadfe9",
             "name": "Fast switch the \"favourite\" field of a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/favourite",
             "description": "Fast switch the \"favourite\" field of a datapoint.",
@@ -2745,11 +2745,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "67211aca8e4b0f1a1616cd962d656547",
+            "id": "0a6c103ea694d5530e54d8175d4221d9",
             "name": "Retrieve the list of events related to this datapoint.",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/hits",
             "description": "Retrieve the list of events related to this datapoint..",
@@ -2818,11 +2818,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "433cc15a08d1e2f1ab5f93cb83d5d8a0",
+            "id": "ddc3b92e25a0508be6c81f380695f80a",
             "name": "Fast patch the \"notes\" field of a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/notes",
             "description": "Fast patch the \"notes\" field of a datapoint.",
@@ -2856,11 +2856,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e43073422297f33fbbe10d0be43bd650",
+            "id": "8682f04f8534a43ce8ad87177310facd",
             "name": "Retrieve a top report connected to this datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/datapoints\/{id}\/reports",
             "description": "Retrieve a top report connected to this datapoint.",
@@ -2915,11 +2915,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "cd8a79de1bf0f82bf598c8f7eaf437b8",
+            "id": "bee140631200ca20bf37921807b419f6",
             "name": "Retrieve a list of domains",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains",
             "description": "Retrieve a list of domains.",
@@ -2967,11 +2967,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e0717548c72cb294b1a1394c0680fbe6",
+            "id": "2b036d2d5f2b0ffd3b73c6f2139c90bd",
             "name": "Create a domain",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains",
             "description": "Create a domain.",
@@ -2998,11 +2998,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "da5f9c2b401c9235367967b05b6d6d43",
+            "id": "e7e281b1e61913748da418dffb813398",
             "name": "Retrieve count of domains",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains\/count",
             "description": "Retrieve count of domains.",
@@ -3036,11 +3036,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "f9d3dc685149e203c6137bcde9cc834a",
+            "id": "442758be198b3dc6aeae56aa0c0159b3",
             "name": "Delete a domain",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains\/{id}",
             "description": "Delete a domain.",
@@ -3067,11 +3067,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "586feb7d4bd5d8bf5f55f29daf3571b4",
+            "id": "314d8e752573ee2bb056070b97198788",
             "name": "Get a domain",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains\/{id}",
             "description": "Get a domain.",
@@ -3098,11 +3098,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "dd0831e4b2ab5ce1e03bc4c9da4fe3db",
+            "id": "9f17bca31ce20ecf178020a2856d8954",
             "name": "Update a domain",
             "url": "httpsapiv2.clickmeter.com:80\/\/domains\/{id}",
             "description": "Update a domain.",
@@ -3136,11 +3136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "dad8071c5ff6918d54b50cdc4b00df85",
+            "id": "448dd2e3de1841afb0cd4513935626d7",
             "name": "List of all the groups associated to the user.",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups",
             "description": "List of all the groups associated to the user..",
@@ -3216,11 +3216,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "50bf42300658765331238fe8c4b54c92",
+            "id": "c44c13f95710c03172dcb65bb402caab",
             "name": "Create a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups",
             "description": "Create a group.",
@@ -3247,11 +3247,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "f1a52f3578e0f32f12d96a96f1a9b890",
+            "id": "583e474d61e70ae7b2acc9da63e7a87a",
             "name": "Retrieve statistics about this customer for a timeframe by groups",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/aggregated",
             "description": "Retrieve statistics about this customer for a timeframe by groups.",
@@ -3320,11 +3320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e7a7fd99d1b865e43e83838c50547d90",
+            "id": "52bd456369b1e51e41cfe59a8539728a",
             "name": "Retrieve statistics about all groups of this customer for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/aggregated\/list",
             "description": "Retrieve statistics about all groups of this customer for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -3393,11 +3393,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "267b8c35ec10432be0aae6aebe2e079d",
+            "id": "d635efc39885f80e024ef55278c04de1",
             "name": "Count the groups associated to the user.",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/count",
             "description": "Count the groups associated to the user..",
@@ -3459,11 +3459,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d12e446d76397b011a68f163786c5a86",
+            "id": "ee9b9141b2356d8cad7f7be24a2a4576",
             "name": "Delete group specified by id",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}",
             "description": "Delete group specified by id.",
@@ -3490,11 +3490,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "3112899c4e2f425f4213b949e94bd85d",
+            "id": "c326aeab696d5d7c71a274226b587e81",
             "name": "Get a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}",
             "description": "Get a group.",
@@ -3521,11 +3521,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "8a74c0fde131097ceeefcec303ea8cfb",
+            "id": "36ed7931d8fb0e81fec3789b188de998",
             "name": "Update a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}",
             "description": "Update a group.",
@@ -3559,11 +3559,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "940964a48ec56041b8f01add810d21ed",
+            "id": "ce639830ae0fd20510752b508135f029",
             "name": "Retrieve statistics about this group for a timeframe",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated",
             "description": "Retrieve statistics about this group for a timeframe.",
@@ -3618,11 +3618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5fd529a7f1951ba4a1b207cab251162c",
+            "id": "b693b6b7fc18f1d3d818be765f6242ff",
             "name": "Retrieve statistics about this group for a timeframe grouped by some temporal entity (day\/week\/month)",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated\/list",
             "description": "Retrieve statistics about this group for a timeframe grouped by some temporal entity (day\/week\/month).",
@@ -3677,11 +3677,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b3f7a1f46c8b85fa81a6ae3ed01dddd7",
+            "id": "797858ae6f2ad93f5018985041255b47",
             "name": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/aggregated\/summary",
             "description": "Retrieve statistics about a subset of datapoints for a timeframe with datapoints data.",
@@ -3792,11 +3792,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "fe393aacc667fbd0295e29b93ec9911f",
+            "id": "d76263965284bba5d38641bc43863b4f",
             "name": "List of all the datapoints associated to the user in this group.",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints",
             "description": "List of all the datapoints associated to the user in this group..",
@@ -3900,11 +3900,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "9df6a27721c78f86a3dbfc22f8671d79",
+            "id": "c819578b7c57a9a238f1b2400f93327d",
             "name": "Create a datapoint in this group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints",
             "description": "Create a datapoint in this group.",
@@ -3938,11 +3938,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "2309f84e031193ffff3242aa2c9037af",
+            "id": "a29042d35c6f262f3f94324c084942e9",
             "name": "Count the datapoints associated to the user in this group.",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/datapoints\/count",
             "description": "Count the datapoints associated to the user in this group..",
@@ -4018,11 +4018,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "c709e5d3574080b72d62c67a4d6a7b7e",
+            "id": "6f5b0a1ffb0ca66f276dd3d18d6f56e7",
             "name": "Fast switch the \"favourite\" field of a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/favourite",
             "description": "Fast switch the \"favourite\" field of a group.",
@@ -4049,11 +4049,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "57a05f73bbef38505dd38dd81653b072",
+            "id": "0b00fa634c700a2b231e0c45eff4afcf",
             "name": "Retrieve the list of events related to this group.",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/hits",
             "description": "Retrieve the list of events related to this group..",
@@ -4122,11 +4122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "1b4025a246bc5e75be1871a4f9b144c3",
+            "id": "f7711033a51370534f726ed95c86a872",
             "name": "Fast patch the \"notes\" field of a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/notes",
             "description": "Fast patch the \"notes\" field of a group.",
@@ -4160,11 +4160,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "6ea707a083b6562a42573077dd842216",
+            "id": "5491e0b46d6084504768b70d75a743b7",
             "name": "Retrieve a top report connected to this group",
             "url": "httpsapiv2.clickmeter.com:80\/\/groups\/{id}\/reports",
             "description": "Retrieve a top report connected to this group.",
@@ -4226,11 +4226,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "669c599f944e7894957f11dee97bc213",
+            "id": "74fd4b9a6c520d2f5ccbd23dea49f88a",
             "name": "Retrieve the list of events related to this account.",
             "url": "httpsapiv2.clickmeter.com:80\/\/hits",
             "description": "Retrieve the list of events related to this account..",
@@ -4292,11 +4292,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "76011afda9085bcbda6555502cc7b77f",
+            "id": "cfe6f362b3b7a8c6811eb80dffd93cf6",
             "name": "Retrieve current account data",
             "url": "httpsapiv2.clickmeter.com:80\/\/me",
             "description": "Retrieve current account data.",
@@ -4315,11 +4315,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "e16956473059262145513dc7f6c7b137",
+            "id": "50daf237c0b8de66a1921993084a7fbd",
             "name": "Retrieve current account plan",
             "url": "httpsapiv2.clickmeter.com:80\/\/me\/plan",
             "description": "Retrieve current account plan.",
@@ -4338,11 +4338,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "dc5409f8f4fb0841f8ffb0e893ab2261",
+            "id": "10cf677d7aef8c4ea24ab7c79aa34ede",
             "name": "Retrieve a top report",
             "url": "httpsapiv2.clickmeter.com:80\/\/reports",
             "description": "Retrieve a top report.",
@@ -4418,11 +4418,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "15f2ab196f5fcba71dd6778ff47f9c1a",
+            "id": "7d742f36af41ec4fc68823c04ba935ba",
             "name": "List of all the retargeting scripts associated to the user",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting",
             "description": "List of all the retargeting scripts associated to the user.",
@@ -4456,11 +4456,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "119385d8d6ee91734d6499a6e186487e",
+            "id": "d32dc2a05cae5d92eaa0b0d0977c1114",
             "name": "Creates a retargeting script",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting",
             "description": "Creates a retargeting script.",
@@ -4487,11 +4487,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "186bd47fa913f426be7a381fe2e508c4",
+            "id": "77a26cf007e63a0a810f0ec75fd7b2de",
             "name": "Retrieve count of retargeting scripts",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/count",
             "description": "Retrieve count of retargeting scripts.",
@@ -4510,11 +4510,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "796bf7bd82bfb105d041c511ca330498",
+            "id": "f0728001e54bcd4e1408a6de2ffdcf73",
             "name": "Deletes a retargeting script (and remove associations)",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/{id}",
             "description": "Deletes a retargeting script (and remove associations).",
@@ -4541,11 +4541,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b19835ac92c6a86364e4643bbfc2afd7",
+            "id": "c5d5634050195a36742588d1053e9169",
             "name": "Get a retargeting script object",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/{id}",
             "description": "Get a retargeting script object.",
@@ -4572,11 +4572,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "7072b8b7d1318939ecdd8d60a6db30e0",
+            "id": "5bf6a62d99b7f0a9efe574446edf0170",
             "name": "Updates a retargeting script",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/{id}",
             "description": "Updates a retargeting script.",
@@ -4610,11 +4610,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "d04d516a60b160385286faa0a09c0023",
+            "id": "179a1857dff01e03d5696180b0856fdf",
             "name": "List of all the datapoints associated to the retargeting script.",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/{id}\/datapoints",
             "description": "List of all the datapoints associated to the retargeting script..",
@@ -4711,11 +4711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "5fba6253d2105648167a84ec2c1ece26",
+            "id": "f32751858ea50083ecd611468307f4f1",
             "name": "Count the datapoints associated to the retargeting script.",
             "url": "httpsapiv2.clickmeter.com:80\/\/retargeting\/{id}\/datapoints\/count",
             "description": "Count the datapoints associated to the retargeting script..",
@@ -4784,11 +4784,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b1b24106a1ecd2187798d0480dcb080e",
+            "id": "3658622137de425e92a5dcfabc7ed5b0",
             "name": "List of all the groups associated to the user filtered by this tag.",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags",
             "description": "List of all the groups associated to the user filtered by this tag..",
@@ -4850,11 +4850,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "8f07928b82b1d7ffa089b5cdd0bb178d",
+            "id": "1c80140199d3ef892c37528e249bb8e4",
             "name": "Create a tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags",
             "description": "Create a tag.",
@@ -4881,11 +4881,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "8182d56382de4297a91e92abfeb2adb2",
+            "id": "04d94dbd13198c3aa0b4b2b9ca235c46",
             "name": "List of all the groups associated to the user filtered by this tag.",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/count",
             "description": "List of all the groups associated to the user filtered by this tag..",
@@ -4933,11 +4933,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "72501cbd3aaa92e2ea3342032a0f8ad6",
+            "id": "130ed67038d1f0adf99783cd7f50a885",
             "name": "Delete a tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}",
             "description": "Delete a tag.",
@@ -4964,11 +4964,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "34109d3f9663b1a3ef015ce81de92f39",
+            "id": "c2e56611012f96f22862082489c1d031",
             "name": "Retrieve a tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}",
             "description": "Retrieve a tag.",
@@ -4995,11 +4995,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "6102ab01254d387aa60a140d36fe3281",
+            "id": "fb7c7c76d8663aa0833b90d06387a2bf",
             "name": "Delete the association of this tag with all datapoints",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints",
             "description": "Delete the association of this tag with all datapoints.",
@@ -5026,11 +5026,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "352804c62cb8553120d163922db415fb",
+            "id": "700932cf12bb317d91a56f2632263806",
             "name": "List of all the datapoints associated to the user filtered by this tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints",
             "description": "List of all the datapoints associated to the user filtered by this tag.",
@@ -5106,11 +5106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "f5856e23883820ff455ba2ea9076250e",
+            "id": "82abe85bb76adc04dbddc8db95ca7c2c",
             "name": "Count the datapoints associated to the user filtered by this tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints\/count",
             "description": "Count the datapoints associated to the user filtered by this tag.",
@@ -5172,11 +5172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "932911f673c5a94bdc4b81f276c78e4c",
+            "id": "74dbd4bd469df411afe091feb820fbe2",
             "name": "Associate\/Deassociate a tag with a datapoint",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/datapoints\/patch",
             "description": "Associate\/deassociate a tag with a datapoint.",
@@ -5210,11 +5210,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "880a683cd4c012549afaca54928123d6",
+            "id": "5d1665292de7e52a2bfbeb782962b647",
             "name": "Delete the association of this tag with all groups",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups",
             "description": "Delete the association of this tag with all groups.",
@@ -5241,11 +5241,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "7ff933f2cc93a5eac8444eac8e625997",
+            "id": "6f0884a046c88b8f6c1e2a130e1e0033",
             "name": "List of all the groups associated to the user filtered by this tag.",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups",
             "description": "List of all the groups associated to the user filtered by this tag..",
@@ -5314,11 +5314,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "ee47e7eac7b50e5f3860265ef6ab7041",
+            "id": "12b15bf8001abf57d4cee5306b325ab6",
             "name": "Count the groups associated to the user filtered by this tag",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups\/count",
             "description": "Count the groups associated to the user filtered by this tag.",
@@ -5373,11 +5373,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "f9f2121aa4ac0cfe4ce2587b513a3a9b",
+            "id": "78fcfc22a68cf15d9730b6df2a29de0e",
             "name": "Associate\/Deassociate a tag with a group",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/groups\/patch",
             "description": "Associate\/deassociate a tag with a group.",
@@ -5411,11 +5411,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         },
         {
-            "id": "b7841bcff9edbb566e8eefaea9b49115",
+            "id": "b4a66542fc252b25e858f6e69afaf0b9",
             "name": "Fast patch a tag name",
             "url": "httpsapiv2.clickmeter.com:80\/\/tags\/{tagId}\/name",
             "description": "Fast patch a tag name.",
@@ -5449,7 +5449,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6651dfd004f0d901db70dfca68ea183c",
+            "collectionId": "29013b7e824e5fffba45ae5064a3536a",
             "rawModeData": ""
         }
     ]
